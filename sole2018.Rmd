@@ -65,20 +65,20 @@ set the `render_print` option to `FALSE`.
 
 <figure>
 
-<img src="resources/fig1wman.png" style="width:95%">
+<center><img src="resources/fig1wman.png" style="width:90%;margin: 20px 0px 20px 0px;"></center>
 
-<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing software algorithms. (B) Amplify parts (C) Assemble new constructs (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing design software platforms. (B) Order primers and amplify parts (C) Assemble new constructs via *in vivo* assembly (IVA), goldengate, etc. (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
 
 </figure>
 
-### **Effective Assembly Demonstration** {data-width=800}
+### **Validating DNtegrAte with PCR and Multi-part *in vivo* Assembly** {data-width=800}
 
 
 <figure>
 
-<img src="resources/posterfig416.png" style="width:90%;">
+<center><img src="resources/posterfig416.png" style="width:100%;"></center>
 
-<figcaption align = "center"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol verified by successful amplification of fragments varying in length and annealing temp. (B) Graphical depiction of optimal annealing temp gradient calculated for 2A. (C) DNtegrAte IVA protocol verified by successful amplification of each assembly fragment. (D) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate DNtegrAte IVA protocol.</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol was verified by successful amplification of DNA fragments varying in length and annealing temperature. (B) A graphical depiction of the optimal annealing temperature gradient calculated for the PCR. (C) DNtegrAte IVA protocol was verified by successful amplification of each assembly fragment. (D) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate the IVA protocol.</span></b></figcaption>
 
 </figure>
 
@@ -122,8 +122,9 @@ DNtegrate could serve as an important tool for bringing synthetic biology to sma
 </span>
 
 ### Acknowledgments {data-width=20}
-<span style="font-size:.6em;line-height:134%;display:block;">
-  Research in the Wright Lab is supported by the USDA (Project 1021738).
+<span style="font-size:.5em;line-height:134%;display:block;">
+Research in the Wright Lab is supported by the USDA (Project 1021738).
+<a href="https://www.freepik.com/photos/frustrated-man">Frustrated man photo created by luis_molinero - www.freepik.com</a>
 </span>
 
 
@@ -131,7 +132,7 @@ DNtegrate could serve as an important tool for bringing synthetic biology to sma
 ### My Website {data-width=10 .small}
 
 <td rowspan="0"></center>
-  <img src="resources/qrplot.png" style="width:55px"></img>
+  <center><img src="resources/qrplot.png" style="width:55px"></img></center>
 </center></td>
 
 
