@@ -24,12 +24,12 @@ library(knitr)
   **DNtegrAte: An Open-Source Python Package for Performing DNA Assemblies with the OT-2 Liquid Handling Robot**
   </h3></center></td>
   <td rowspan="2">
-  <img src="resources/VTlogo.png" style="width:90px;margin: 0px 0px 15px 0px"></img>
-  <img src="resources/usda-logo-color.svg" style="width:75px;margin: 0px 0px 0px 10px"></img>
+  <img src="resources/VTlogo.png" style="width:90px;margin: 0px 0px 15px 15px"></img>
+  <img src="resources/usda-logo-color.svg" style="width:75px;margin: 0px 0px 0px 15px"></img>
   </td>
 </tr>
 <tr><td><center>
-  **John Bryant** &nbsp;
+  **John Bryant, Mason Kellinger, Cameron Longmire, & R. Clay Wright** &nbsp;
   <i class="fas fa-envelope"></i> jbryant2\@vt.edu &nbsp;
   <i class="fas fa-globe"></i> <a href="https://jbryantvt.github.io" style="text-decoration:none;">jbryantvt.github.io</a> &nbsp;
   <i class="fab fa-github"></i> <a href="https://github.com/PlantSynBio/opentrons" style="text-decoration:none;">github.com/PlantSynBio/opentrons</a>
@@ -40,7 +40,7 @@ library(knitr)
 <hr>
 
 
-<span style="font-size:.8em;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. Implementing software platforms to automate DNA construct design is usually done by hand and consequently error-prone. Here, we present an open-source python package to integrate DNA assembly software outputs with the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the versatility of our software by demonstrating several multipart assemblies.</span> 
+<span style="font-size:.9em;line-height:134%;display:block;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. Implementation of DNA design software is usually done by hand which is low-throughput and error-prone. Here, we present an open-source python package to integrate DNA assembly software with the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the flexibility  and versatility of DNtegrAte by demonstrating PCRs and multipart assemblies.</span> 
 <!--
 The `render_print` format option is set to `TRUE` by default in this poster
 sample, and will result in `postr::render` being called when knitting the
@@ -55,33 +55,30 @@ set the `render_print` option to `FALSE`.
 
 ### **Introduction** {data-width=500}
 
-#### <span style="font-size:.8em;">Motivation: To increase pheasability of synthetic biology by automating cloning workflows.</span>
+#### <span style="font-size:.8em;">The Troublesome Cloning Workflow</span>
+<span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
+<ul>
+  <li>Extensive training and high error-rates are typical in synbio labs due to the complexity of the cloning workflow in practice.</li>
+  <li>Researchers spend more time and resources on executing the workflow rather than actually engineering biology.</li>
+</ul>
+</span>
 
 <figure>
 
-<img src="resources/goodo.png" style="width:90%">
+<img src="resources/fig1wman.png" style="width:95%">
 
-<figcaption align = "center"><b><span style="font-size:.7em;">Fig. 1: The Cloning Workflow - (A) Design constructs with existing software algorithms. (B) Amplify parts (C) assemble new constructs. (D) Maintain constructs in *E. coli*, and (E) use for downstream applications and new constructs.</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing software algorithms. (B) Amplify parts (C) Assemble new constructs (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
 
 </figure>
 
-#### <span style="font-size:.8em;">Workflow Pitfalls:</span>
-
-<span style="font-size:.8em;">
-<ol>
-  <li>Extensive training and high error-rates are typical due to the complexity of this workflow in practice.</li>
-  <li>Researchers focus more time and energy on executing the workflow instead of actually engineering biolgy.</li>
-</ol>
-</span>
-
-### **Demonstrating Effective Assembly** {data-width=800}
+### **Effective Assembly Demonstration** {data-width=800}
 
 
 <figure>
 
-<img src="resources/image844.png" style="width:90%">
+<img src="resources/posterfig416.png" style="width:90%;">
 
-<figcaption align = "center"><b><span style="font-size:.7em;">Fig. 2: Multipart Assembly with DNtegrAte - (A) DNA gel showing final pcr products of DNtegrate protocol. (B) Graphical depiction of optimal linear annealing temperature gradient calculated by DNtegrAte algorithm. (C) DNA gel showing final pcr products of "one pot" fragment amplification for <p><i>in vivo</i><p> assembly (IVA) construct assembly. (D) Colorful transformants hopefully.....</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol verified by successful amplification of fragments varying in length and annealing temp. (B) Graphical depiction of optimal annealing temp gradient calculated for 2A. (C) DNtegrAte IVA protocol verified by successful amplification of each assembly fragment. (D) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate DNtegrAte IVA protocol.</span></b></figcaption>
 
 </figure>
 
@@ -91,42 +88,50 @@ set the `render_print` option to `FALSE`.
 
 #### <span style="font-size:.8em;">Software Design:</span>
 
-- Panels of scientists convened to review grant applications
-- Reviewers serve 4-year terms, attending three meetings a year
+<span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
+<ul>
+  <li>Protocol scripts are flexible and fully automated.</li>
+  <li>GUI for specifying parameters like template concentration, PCR volume, etc. is included.</li>
+  <li>Input and output files are automatically generated and archived in dated directories available at github.com/plantsynbio/opentrons.</li>
+</ul>
+</span>
 
 #### <span style="font-size:.8em;">Data Collection:</span>
 
-- Study section meeting rosters
-- Author-ity: disambiguated authors in biomedical literature
-- Web of Science: citations
+<span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
+<ul>
+  
+  <li>The multi-fragment PCR for gradient algorithm validation (fig 2A, 2B) was based on a design for an auxin signaling protein motif deletion.</li>
+  <li>The IVA for assembly protocol validation (fig 2C, 2D) was based on a chromoprotein swap design which assembles two backbone fragments from a blue plasmid with an Amp resistance fragment, and each color to produce products in fig 2D.</li>
+</ul>
+</span>
 
-
-## Footer row {data-height=6.5} 
+## Footer row {data-height=6.4} 
 
 ### Conclusion {data-width=45}
-<span style="font-size:.7em;">
-  - DNtegrate flexibly performs DNA assemblies and could serve as an important tool in bringing synthetic biology to smaller labs without large workforces or extensive financial resources
+<span style="font-size:.7em;line-height:134%;display:block;">
+DNtegrate could serve as an important tool for bringing synthetic biology to smaller labs without large workforces or extensive financial resources.
 </span>
 
 ### Future Work {data-width=45}
-<span style="font-size:.7em;">
-  - Integrate magnetic-bead based DNA purification into golden gate assembly protocol.
-  - Implement DNtegrAte in a new lab.
+<span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
+  <ul>
+  <li>Integrate magnetic-bead based DNA purification into protocols.</li>
+  <li>Carry out beta testing with collaborators.</li>
+</ul>
 </span>
 
-### Acknowledgments {data-width=20, .small}
+### Acknowledgments {data-width=20}
+<span style="font-size:.6em;line-height:134%;display:block;">
+  Research in the Wright Lab is supported by the USDA (Project 1021738).
+</span>
 
-<small>
-Research in the Wright Lab is supported by the USDA (Project 1021738).
-</small>
 
 
-<!--
 ### My Website {data-width=10 .small}
 
 <td rowspan="0"></center>
-  <img src="website_QR.png" style="width:80px"></img>
+  <img src="resources/qrplot.png" style="width:55px"></img>
 </center></td>
 
--->
 
