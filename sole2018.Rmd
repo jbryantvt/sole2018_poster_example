@@ -24,12 +24,12 @@ library(knitr)
   **DNtegrAte: An Open-Source Python Package for Performing DNA Assemblies with the OT-2 Liquid Handling Robot**
   </h3></center></td>
   <td rowspan="2">
-  <img src="resources/VTlogo.png" style="width:90px;margin: 0px 0px 15px 15px"></img>
-  <img src="resources/usda-logo-color.svg" style="width:75px;margin: 0px 0px 0px 15px"></img>
+  <img src="resources/VTlogo.png" style="width:90px;margin: 0px 0px 15px 20px"></img>
+  <img src="resources/usda-logo-color.svg" style="width:75px;margin: 0px 0px 0px 20px"></img>
   </td>
 </tr>
 <tr><td><center>
-  **John Bryant, Mason Kellinger, Cameron Longmire, & R. Clay Wright** &nbsp;
+  **John Bryant, Mason Kellinger, Cameron Longmire, & Clay Wright** &nbsp;
   <i class="fas fa-envelope"></i> jbryant2\@vt.edu &nbsp;
   <i class="fas fa-globe"></i> <a href="https://jbryantvt.github.io" style="text-decoration:none;">jbryantvt.github.io</a> &nbsp;
   <i class="fab fa-github"></i> <a href="https://github.com/PlantSynBio/opentrons" style="text-decoration:none;">github.com/PlantSynBio/opentrons</a>
@@ -40,7 +40,7 @@ library(knitr)
 <hr>
 
 
-<span style="font-size:.9em;line-height:134%;display:block;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. Implementation of DNA design software is usually done by hand which is low-throughput and error-prone. Here, we present an open-source python package to integrate DNA assembly software with the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the flexibility  and versatility of DNtegrAte by demonstrating PCRs and multipart assemblies.</span> 
+<span style="font-size:.9em;line-height:134%;display:block;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. While several solutions exist for automating DNA construct design, DNA construct assembly is usually done by hand, which is low-throughput and error-prone. Here, we present an open-source python package to integrate j5 DNA design software with automated assembly via the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the flexibility  and versatility of DNtegrAte by demonstrating PCRs and multipart assemblies.</span> 
 <!--
 The `render_print` format option is set to `TRUE` by default in this poster
 sample, and will result in `postr::render` being called when knitting the
@@ -65,9 +65,9 @@ set the `render_print` option to `FALSE`.
 
 <figure>
 
-<center><img src="resources/fig1wman.png" style="width:90%;margin: 20px 0px 20px 0px;"></center>
+<center><img src="resources/fig1wman_n_screenshot.png" style="width:85%;margin: 20px 0px 20px 0px;"></center>
 
-<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing design software platforms. (B) Order primers and amplify parts (C) Assemble new constructs via *in vivo* assembly (IVA), goldengate, etc. (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing design software platforms. A screenshot of j5<sup>1</sup>, the primary design software used in the Wright Lab, is included (B) Order primers and amplify parts (C) Assemble new constructs via *in vivo* assembly (IVA), goldengate, etc. (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
 
 </figure>
 
@@ -76,9 +76,9 @@ set the `render_print` option to `FALSE`.
 
 <figure>
 
-<center><img src="resources/posterfig416.png" style="width:100%;"></center>
+<center><img src="resources/posterfig416-draft2.png" style="width:95%;"></center>
 
-<figcaption align = "center"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol was verified by successful amplification of DNA fragments varying in length and annealing temperature. (B) A graphical depiction of the optimal annealing temperature gradient calculated for the PCR. (C) DNtegrAte IVA protocol was verified by successful amplification of each assembly fragment. (D) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate the IVA protocol.</span></b></figcaption>
+<figcaption align = "left"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol was verified by successful amplification of DNA fragments varying in length and annealing temperature. (B) A graphical depiction of the optimal annealing temperature gradient calculated for the PCR. (C) DNtegrAte IVA protocol was verified by successful amplification of each assembly fragment. (D) Schematic to specify how fragments are combined to yield final constructs. (E) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate the IVA protocol.</span></b></figcaption>
 
 </figure>
 
@@ -92,7 +92,7 @@ set the `render_print` option to `FALSE`.
 <ul>
   <li>Protocol scripts are flexible and fully automated.</li>
   <li>GUI for specifying parameters like template concentration, PCR volume, etc. is included.</li>
-  <li>Input and output files are automatically generated and archived in dated directories available at github.com/plantsynbio/opentrons.</li>
+  <li>Input and output files are automatically generated and archived in dated directories available in the working directory.</li>
 </ul>
 </span>
 
@@ -108,7 +108,7 @@ set the `render_print` option to `FALSE`.
 
 ## Footer row {data-height=6.4} 
 
-### Conclusion {data-width=45}
+### Conclusion {data-width=50}
 <span style="font-size:.7em;line-height:134%;display:block;">
 DNtegrate could serve as an important tool for bringing synthetic biology to smaller labs without large workforces or extensive financial resources.
 </span>
@@ -121,15 +121,22 @@ DNtegrate could serve as an important tool for bringing synthetic biology to sma
 </ul>
 </span>
 
+### References {data-width=20}
+<span style="font-size:.7em;margin: 0 0 0 -20px;display:block;">
+  <ol>
+  <li>The j5 citation. nature. 2016. volume 22342.</li>
+</ol>
+</span>
+
 ### Acknowledgments {data-width=20}
-<span style="font-size:.5em;line-height:134%;display:block;">
+<span style="font-size:.47em;line-height:134%;display:block;">
 Research in the Wright Lab is supported by the USDA (Project 1021738).
-<a href="https://www.freepik.com/photos/frustrated-man">Frustrated man photo created by luis_molinero - www.freepik.com</a>
+<a href="https://www.freepik.com/photos/frustrated-man">Frustrated man photo: luis_molinero - www.freepik.com</a>
 </span>
 
 
 
-### My Website {data-width=10 .small}
+### JB's CV {data-width=10 .small}
 
 <td rowspan="0"></center>
   <center><img src="resources/qrplot.png" style="width:55px"></img></center>
