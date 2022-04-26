@@ -40,7 +40,7 @@ library(knitr)
 <hr>
 
 
-<span style="font-size:.9em;line-height:134%;display:block;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. While several solutions exist for automating DNA construct design, DNA construct assembly is usually done by hand, which is low-throughput and error-prone. Here, we present an open-source python package to integrate j5 DNA design software with automated assembly via the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the flexibility  and versatility of DNtegrAte by demonstrating PCRs and multipart assemblies.</span> 
+<span style="font-size:.9em;line-height:134%;display:block;"><strong>Abstract</strong>: DNA assembly is low throughput and unreliable. While several solutions exist for automating DNA construct design, assembly is usually done by hand. This process is low-throughput and error-prone. Here, we present an open-source python package to integrate j5 DNA design software with automated assembly via the OT-2 liquid handling robot. Our package reduces the time, training, costs, and wastes associated with molecular biology. We demonstrate the flexibility  and versatility of DNtegrAte by demonstrating PCRs and multipart assemblies.</span> 
 <!--
 The `render_print` format option is set to `TRUE` by default in this poster
 sample, and will result in `postr::render` being called when knitting the
@@ -58,16 +58,16 @@ set the `render_print` option to `FALSE`.
 #### <span style="font-size:.8em;">The Troublesome Cloning Workflow</span>
 <span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
 <ul>
-  <li>Extensive training and high error-rates are typical in synbio labs due to the complexity of the cloning workflow in practice.</li>
+  <li>Extensive training and high error-rates are typical in SynBio labs due to the complexity of the cloning workflow in practice.</li>
   <li>Researchers spend more time and resources on executing the workflow rather than actually engineering biology.</li>
 </ul>
 </span>
 
 <figure>
 
-<center><img src="resources/fig1wman_n_screenshot.png" style="width:85%;margin: 20px 0px 20px 0px;"></center>
+<center><img src="resources/fig1wman_n_screenshot.png" style="width:90%;margin: 15px 10px 15px 0px;"></center>
 
-<figcaption align = "center"><b><span style="font-size:.9em;line-height:134%;display:block;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing design software platforms. A screenshot of j5<sup>1</sup>, the primary design software used in the Wright Lab, is included (B) Order primers and amplify parts (C) Assemble new constructs via *in vivo* assembly (IVA), goldengate, etc. (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
+<figcaption align = "center"><b><span style="font-size:.88em;line-height:134%;display:block;margin: 0px 0px 0px 20px;">Fig. 1: **The Cloning Workflow** - (A) Design constructs with existing design software platforms. A screenshot of j5<sup>1</sup>, the primary design software used in the Wright Lab, is included (B) Order primers and amplify parts (C) Assemble new constructs via *in vivo* assembly (IVA)<sup>2</sup>, goldengate<sup>3</sup>, etc. (D) Maintain constructs in *E. coli* (E) Use for downstream applications.</span></b></figcaption>
 
 </figure>
 
@@ -78,7 +78,7 @@ set the `render_print` option to `FALSE`.
 
 <center><img src="resources/posterfig416-draft2.png" style="width:95%;"></center>
 
-<figcaption align = "left"><b><span style="font-size:.6em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol was verified by successful amplification of DNA fragments varying in length and annealing temperature. (B) A graphical depiction of the optimal annealing temperature gradient calculated for the PCR. (C) DNtegrAte IVA protocol was verified by successful amplification of each assembly fragment. (D) Schematic to specify how fragments are combined to yield final constructs. (E) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate the IVA protocol.</span></b></figcaption>
+<figcaption align = "left"><b><span style="font-size:.61em;line-height:134%;display:block;">Fig. 2: Cloning with DNtegrAte - (A) DNtegrAte PCR protocol was verified by successful amplification of DNA fragments varying in length and annealing temperature. (B) A graphical depiction of the optimal annealing temperature gradient calculated for the PCR is shown. (C) DNtegrAte IVA protocol was verified by successful amplification of each chromoprotein assembly fragment. (D) Schematic to specify how fragments are combined to yield final constructs is inclued. (E) Consistent transformation efficiency, correct antibiotic resistance, and correct chromoprotein expression further validate the IVA protocol.</span></b></figcaption>
 
 </figure>
 
@@ -102,7 +102,7 @@ set the `render_print` option to `FALSE`.
 <ul>
   
   <li>The multi-fragment PCR for gradient algorithm validation (fig 2A, 2B) was based on a design for an auxin signaling protein motif deletion.</li>
-  <li>The IVA for assembly protocol validation (fig 2C, 2D) was based on a chromoprotein swap design which assembles two backbone fragments from a blue plasmid with an Amp resistance fragment, and each color to produce products in fig 2D.</li>
+  <li>The IVA for assembly protocol validation (fig 2C, 2D, 2E) was based on a chromoprotein<sup>4</sup> swap design. Here we assemble two backbone fragments from a blue plasmid with an Amp resistance fragment and each color (fig 2D). The final products are shown in figure 2E.</li>
 </ul>
 </span>
 
@@ -110,33 +110,30 @@ set the `render_print` option to `FALSE`.
 
 ### Conclusion {data-width=50}
 <span style="font-size:.7em;line-height:134%;display:block;">
-DNtegrate could serve as an important tool for bringing synthetic biology to smaller labs without large workforces or extensive financial resources.
+DNtegrate could serve as an important tool for enabling synthetic biology in smaller labs without large workforces or extensive financial resources.
 </span>
 
 ### Future Work {data-width=45}
 <span style="font-size:.7em;margin: 0 0 0 -15px;display:block;">
   <ul>
-  <li>Integrate magnetic-bead based DNA purification into protocols.</li>
-  <li>Carry out beta testing with collaborators.</li>
+  <li>Integrate bead based DNA purification and transformation.</li>
+  <li>Carry out beta testing and develop tip cleaning.</li>
 </ul>
 </span>
 
-### References {data-width=20}
-<span style="font-size:.7em;margin: 0 0 0 -20px;display:block;">
-  <ol>
-  <li>The j5 citation. nature. 2016. volume 22342.</li>
-</ol>
+### References {data-width=24}
+<span style="font-size:.46em;line-height:134%;display:block;">
+<sup>1</sup>: Hillson et al., *ACS Synthetic Biology*, 8 (2012). <sup>2</sup>: Garcia-Nafaria et al., *Scientific Reports*. 6, 27459 (2016). <sup>3</sup>: Engler et al., *PLOS ONE*. 4, e5553 (2009). <sup>4</sup>: Sebastian Cocioba. \@ATinyGreenCell
 </span>
 
-### Acknowledgments {data-width=20}
-<span style="font-size:.47em;line-height:134%;display:block;">
-Research in the Wright Lab is supported by the USDA (Project 1021738).
-<a href="https://www.freepik.com/photos/frustrated-man">Frustrated man photo: luis_molinero - www.freepik.com</a>
+### Acknowledgments {data-width=19}
+<span style="font-size:.45em;line-height:134%;display:block;">
+USDA (Project 1021738). NIFA Plant Breeding GRANT 13367799. Virginia Space Grant Consortium. Frustrated photo-luis_molinero: www.freepik.com
 </span>
 
 
 
-### JB's CV {data-width=10 .small}
+### JB's CV {data-width=9.5 .small}
 
 <td rowspan="0"></center>
   <center><img src="resources/qrplot.png" style="width:55px"></img></center>
