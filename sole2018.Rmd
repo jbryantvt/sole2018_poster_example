@@ -29,10 +29,10 @@ library(knitr)
   </td>
 </tr>
 <tr><td><center>
-  **John Bryant, Mason Kellinger, Cameron Longmire, & Clay Wright** &nbsp;
+  **John Bryant, M. Kellinger, C. Longmire, & Clay Wright** &nbsp;
   <i class="fas fa-envelope"></i> jbryant2\@vt.edu &nbsp;
   <i class="fas fa-globe"></i> <a href="https://jbryantvt.github.io" style="text-decoration:none;">jbryantvt.github.io</a> &nbsp;
-  <i class="fab fa-github"></i> <a href="https://github.com/PlantSynBio/opentrons" style="text-decoration:none;">github.com/PlantSynBio/opentrons</a>
+  <i class="fab fa-github"></i> <a href="https://github.com/PlantSynBiolab/opentrons" style="text-decoration:none;">github.com/PlantSynBiolab/opentrons</a>
   </center></td>
 </tr>
 </table> 
